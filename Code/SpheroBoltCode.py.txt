@@ -1,9 +1,23 @@
 # Programmers: Natalie Maher & Cayden Johnson
-# Shpero Bolt ID:
+# Shpero Bolt ID: 2FAE
 # Date: 5.4.2026
 # Program: Sandbox Training
 
 
 async def start_program():
-    # Write code here
+    set_main_led({'r': 0, 'g': 0, 'b': 255})
+
+    await speak("Hello Square", True)
+
+    await delay(1)
+
+    for _i1 in range(4):
+
+            set_main_led(get_random_color())
+
+            await Sound.Game.Coin.play(True)
+
+            await roll((get_heading() + 90), 60, 1)
+
+            await delay(1)
     return
