@@ -17,3 +17,11 @@ async def start_program():
 
     set_main_led({'r': 0, 'g': 255, 'b': 0})
     await speak("Square complete! I am done!"), True
+    await speak("She was more like a beauty queen from a movie scene")
+    await speak("I said, Don't mind, but what do you mean, I am the one Who will dance on the floor in the round?")
+    await speak("But the kid is not my son (hee-hee-hee, no-no, hee-hee-hee, hoo)")
+    set_speed(100)
+    await spin(360,1)
+    await delay(1)
+    await speak("AAAAAAAAAAAAAAAHHHHHHHHHH")
+    await speak ("HHHHHEEEEE-HHHHHAAAA")
