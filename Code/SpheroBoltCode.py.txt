@@ -1,23 +1,19 @@
 # Programmers: Natalie Maher & Cayden Johnson
-# Shpero Bolt ID: 2FAE
+# Sphero Bolt ID: 2FAE
 # Date: 5.4.2026
 # Program: Sandbox Training
 
-
 async def start_program():
     set_main_led({'r': 0, 'g': 0, 'b': 255})
-
-    await speak("Hello Square", True)
-
+    await speak("Hello! my name is Patrick . My favorite color is orange. I will now draw a square.", True)  # True = wait to finish
     await delay(1)
 
     for _i1 in range(4):
+        set_main_led(get_random_color())
+        await speak(build_string(["Side " + str(_i1 + 1) + " of 4"]), True)  # Speaks "Side 1 of 4" etc.
+        await Sound.Game.Coin.play(True)
+        await roll(get_heading() + 90, 60, 1)
+        await delay(1)
 
-            set_main_led(get_random_color())
-
-            await Sound.Game.Coin.play(True)
-
-            await roll((get_heading() + 90), 60, 1)
-
-            await delay(1)
-    return
+    set_main_led({'r': 0, 'g': 255, 'b': 0})
+    await speak("Square complete! I am done!"), True
