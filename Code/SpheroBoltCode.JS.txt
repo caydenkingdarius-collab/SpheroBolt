@@ -1,0 +1,8 @@
+# Programmers: Natalie Maher & Cayden Johnson
+# Sphero Bolt ID: 2FAE
+# Date: 5.4.2026
+# Program: Sandbox Training
+async def start_program():
+    set_main_led({ 'r': 67, 'g': 67, 'b': 67 })
+    await roll(0, 55, 2.7)
+    set_main_led({ 'r': 200, 'g': 0, 'b': 255 })
