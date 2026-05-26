@@ -94,11 +94,17 @@ async def start_program():
     set_main_led({ 'r': 67, 'g': 67, 'b': 67 })
     await roll(0, 52, 2.6)
     set_main_led({ 'r': 200, 'g': 0, 'b': 255 })
+
+    #first commit
+
     await delay(2)
     set_speed(50)
     await spin(87, 1)
-    await roll(90,18,2.3)
+    await roll(90,18,2.5)
     set_main_led({ 'r': 0, 'g': 255, 'b': 34 })
+
+    #Second commit
+
     await delay(2)
     await spin(90, 1)
     await delay(1)
@@ -106,6 +112,9 @@ async def start_program():
     await roll(220, 45, 1.5)
     await delay(1)
     await Sound.EightBit.Monster.play(False)
+
+    #Third commit
+
     await delay(1)
     await roll(-250,21,2)
     await delay(1)
@@ -114,6 +123,9 @@ async def start_program():
     play_matrix_animation(0,True)
     await delay(3)
     play_matrix_animation(0,False)
+
+    #Fourth commit
+
     await spin(90, 1)    
     await delay(1)
     await roll(100, 30, 1)
@@ -121,3 +133,12 @@ async def start_program():
     await roll(-160,47,1)
     set_main_led({ 'r': 0, 'g': 34, 'b': 255 })
 
+    #Fifth commit
+
+    await delay(1)
+    await roll(90,35,2)
+    set_main_led({ 'r': 255, 'g': 34, 'b': 0 })
+
+    #Sixth commit
+
+    
