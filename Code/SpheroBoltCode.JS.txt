@@ -109,7 +109,7 @@ async def start_program():
     await spin(90, 1)
     await delay(1)
     await roll(180,25,2.5)
-    await roll(220, 45, 1.5)
+    await roll(220, 35, 1.5)
     await delay(1)
     await Sound.EightBit.Monster.play(False)
 
@@ -142,8 +142,14 @@ async def start_program():
     #Sixth commit
 
     await delay(1)
-    await roll(0,40,1)
+    await roll(0,32,1.5)
     await delay(1)
     await spin(360, 1)
 
     #Seventh commit
+
+    await delay(1)
+    await roll(310,45,1)
+    await Sound.EightBit.Monster.play(False)
+
+    #Eigth commit
